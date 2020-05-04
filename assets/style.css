@@ -1,0 +1,623 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: 'Jost', sans-serif;
+  overflow-x: hidden;
+}
+
+hr {
+  border: dotted darkred 6px;
+  border-bottom: none;
+  margin: 70px auto;
+  width: 2%;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+}
+
+h2 {
+  margin: 10px;
+}
+
+p {
+  font-size: 12px;
+}
+
+.intro {
+  font-family: sans-serif;
+  font-size: 14px;
+  text-align: justify;
+  margin: 1%;
+}
+
+.container {
+  max-width: 100%;
+  margin: auto;
+  background: #fff;
+}
+
+/* Menu navigasi untuk side*/
+.sidenav {
+    height: 100%; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0;
+    left: 0;
+    background-color: black; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 60px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+}
+
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+
+/* Position and style the close button (top right corner) */
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    overflow:hidden;
+    width:100%;
+}
+
+.topnav {
+    background-color: #bd331e;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+a svg{
+  transition:all .5s ease;
+
+  &:hover{
+    #transform:rotate(180deg);
+  }
+}
+
+#ico{
+  display: none;
+}
+
+/*Untuk side navigation berakhir disini*/
+
+.card {
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0.5);
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.jumbotron {
+  padding: 28%;
+  background: url('../assets/images/header.jpg');
+  background-position: center;
+  background-size: cover;
+}
+
+#content {
+  background: #bd331e;
+  font-size: 1em;
+  padding: 2%;
+  color: white;
+  text-align: center;
+}
+
+.kolom {
+  width: 30%;
+  background-color: #e4342a;
+  border-style: dotted;
+  border-width: thick;
+  border-color: crimson;
+  height: auto;
+  margin: 4%;
+  padding: 10px;
+  display: inline-block;
+  margin: auto -3px -3px auto;
+}
+
+.aside-profile {
+  background-color: #bd331e;
+  margin: 10px;
+  padding: 20px;
+  float: left;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0.2);
+  border-radius: 10px;
+}
+
+.style-image{
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0.2);
+  border-radius: 20%;
+  background-color: red;
+}
+
+.icon:hover {
+  color: black;
+}
+
+.middle-container {
+  margin: 25px 0;
+}
+
+.profile-author img {
+  margin: auto;
+  padding: 5px;
+}
+
+.text {
+  text-align: center;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.white-section {
+  background: #fff;
+
+}
+
+.contact-message{
+  width: 40%;
+  text-align: center;
+  font-size: 1.5em;
+  color: darkred;
+  margin: 20px auto 60px;
+}
+
+.btn {
+  background: #bd331e;
+  background-image: -webkit-linear-gradient(top, #bd331e, #e4342a);
+  background-image: -moz-linear-gradient(top, #bd331e, #e4342a);
+  background-image: -ms-linear-gradient(top, #bd331e, #e4342a);
+  background-image: -o-linear-gradient(top, #bd331e, #e4342a);
+  background-image: linear-gradient(to bottom, #bd331e, #e4342a);
+  -webkit-border-radius: 8;
+  -moz-border-radius: 8;
+  border-radius: 8px;
+  font-family: 'Montserrat', sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #30e3cb;
+  background-image: -webkit-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -moz-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -ms-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: -o-linear-gradient(top, #30e3cb, #2bc4ad);
+  background-image: linear-gradient(to bottom, #30e3cb, #2bc4ad);
+  text-decoration: none;
+}
+
+.social-icon {
+  margin: 20px 10px;
+}
+
+.footer-box {
+  padding: 5% 7%;
+  text-align: center;
+}
+
+/* Fungsi Slider */
+.slider {
+  border: 10px solid #efefef;
+  border-radius: 10%;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0.5);
+  background: #efefef;
+}
+
+.slider {
+  margin: 20px auto;
+  width: 768px;
+  height: 450px;
+}
+
+.isi-slider img {
+  width: 768px;
+  height: 450px;
+  float: left;
+}
+
+.isi-slider {
+  position: absolute;
+  width: 3900px;
+
+  /*pengaturan durasi lama tampil gambar bisa di atur di bawah ini*/
+  animation-name: slider;
+  animation-duration: 12s;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: slider;
+  -webkit-animation-duration: 12s;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-name: slider;
+  -moz-animation-duration: 12s;
+  -moz-animation-timing-function: ease-in-out;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-name: slider;
+  -o-animation-duration: 12s;
+  -o-animation-timing-function: ease-in-out;
+  -o-animation-iteration-count: infinite;
+}
+
+/*saat gambar di hover oleh cursor mouse maka berhenti slide*/
+.isi-slider:hover {
+  -webkit-animation-play-state: paused;
+  -moz-animation-play-state: paused;
+  -o-animation-play-state: paused;
+  animation-play-state: paused;
+}
+}
+
+.isi-slider img {
+  float: right;
+}
+
+.slider:after {
+  font-size: 120px;
+  position: absolute;
+  z-index: 12;
+  color: rgba(255, 255, 255, 0);
+  left: 300px;
+  top: 80px;
+  -webkit-transition: 1s all ease-in-out;
+  -moz-transition: 1s all ease-in-out;
+  transition: 1s all ease-in-out;
+}
+
+.slider:hover:after {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+@-moz-keyframes slider {
+  0% {
+    left: 0;
+    opacity: 0;
+  }
+
+  2% {
+    opacity: 1;
+  }
+
+  20% {
+    left: 0;
+    opacity: 1;
+  }
+
+  21% {
+    opacity: 0;
+  }
+
+  24% {
+    opacity: 0;
+  }
+
+  25% {
+    left: -768px;
+    opacity: 1;
+  }
+
+  45% {
+    left: -768px;
+    opacity: 1;
+  }
+
+  46% {
+    opacity: 0;
+  }
+
+  48% {
+    opacity: 0;
+  }
+
+  50% {
+    left: -1536px;
+    opacity: 1;
+  }
+
+  70% {
+    left: -1536px;
+    opacity: 1;
+  }
+
+  72% {
+    opacity: 0;
+  }
+
+  74% {
+    opacity: 0;
+  }
+
+  75% {
+    left: -2304px;
+    opacity: 1;
+  }
+
+  95% {
+    left: -2304px;
+    opacity: 1;
+  }
+
+  97% {
+    left: -2304px;
+    opacity: 0;
+  }
+
+  100% {
+    left: 0;
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes slider {
+  0% {
+    left: 0;
+    opacity: 0;
+  }
+
+  2% {
+    opacity: 1;
+  }
+
+  20% {
+    left: 0;
+    opacity: 1;
+  }
+
+  21% {
+    opacity: 0;
+  }
+
+  24% {
+    opacity: 0;
+  }
+
+  25% {
+    left: -768px;
+    opacity: 1;
+  }
+
+  45% {
+    left: -768px;
+    opacity: 1;
+  }
+
+  46% {
+    opacity: 0;
+  }
+
+  48% {
+    opacity: 0;
+  }
+
+  50% {
+    left: -1536px;
+    opacity: 1;
+  }
+
+  70% {
+    left: -1536px;
+    opacity: 1;
+  }
+
+  72% {
+    opacity: 0;
+  }
+
+  74% {
+    opacity: 0;
+  }
+
+  75% {
+    left: -2304px;
+    opacity: 1;
+  }
+
+  95% {
+    left: -2304px;
+    opacity: 1;
+  }
+
+  97% {
+    left: -2304px;
+    opacity: 0;
+  }
+
+  100% {
+    left: 0;
+    opacity: 0;
+  }
+}
+
+@keyframes slider {
+  0% {
+    left: 0;
+    opacity: 0;
+  }
+
+  2% {
+    opacity: 1;
+  }
+
+  20% {
+    left: 0;
+    opacity: 1;
+  }
+
+  21% {
+    opacity: 0;
+  }
+
+  24% {
+    opacity: 0;
+  }
+
+  25% {
+    left: -768px;
+    opacity: 1;
+  }
+
+  45% {
+    left: -768px;
+    opacity: 1;
+  }
+
+  46% {
+    opacity: 0;
+  }
+
+  48% {
+    opacity: 0;
+  }
+
+  50% {
+    left: -1536px;
+    opacity: 1;
+  }
+
+  70% {
+    left: -1536px;
+    opacity: 1;
+  }
+
+  72% {
+    opacity: 0;
+  }
+
+  74% {
+    opacity: 0;
+  }
+
+  75% {
+    left: -2304px;
+    opacity: 1;
+  }
+
+  95% {
+    left: -2304px;
+    opacity: 1;
+  }
+
+  97% {
+    left: -2304px;
+    opacity: 0;
+  }
+
+  100% {
+    left: 0;
+    opacity: 0;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    width: 100%;
+  }
+
+  .slider {
+    width: 100%;
+  }
+
+  #content {
+    width: auto;
+  }
+
+  .aside-profile{
+    width: auto;
+  }
+
+  .intro{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0.2);
+    width: 100%;
+    text-align: center;
+  }
+
+  .kolom {
+    width: 100%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0.2);
+    border-radius: 10px;
+    margin: 10px;
+  }
+
+  .footer-box{
+    width: 100%;
+  }
+
+  @media screen and (max-width: 780px) {
+    .container {
+      width: 100%;
+    }
+
+    .slider {
+      width: 100%;
+    }
+
+    #content {
+      width: auto;
+      height: auto;
+    }
+
+    .kolom {
+      width: auto;
+      height: auto;
+      text-align: justify;
+      margin: 10px;
+    }
